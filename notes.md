@@ -121,3 +121,12 @@ GOOS=windows GOARCH=amd64 go build 01-hello-world.go
 | struct | struct instance |
 | pointer |nil |
 | interface | nil | 
+
+## Functions
+- Functions can return more than one result
+- Variadic functions
+- Anonymous functions
+- Higher Order functions
+    - Assign functions as values to variables
+    - Pass a function as an argument
+    - Return a function as a return value
