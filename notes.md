@@ -21,7 +21,7 @@
 
 ## Why Go?
 - Simplicity
-    - ONLY 25 keywords
+    - ONLY 25 keywords (package, import, func, var, const, struct, func, return, if, else, switch case, break, continue, fallthrough, return, for, range, select, type, struct, interface, any, go, map, iota etc)
     - No access modifiers (no public/private/protected)
     - No classes (only structs)
     - No inheritence (only composition)
@@ -76,3 +76,48 @@ go tool dist list
 ```shell
 GOOS=windows GOARCH=amd64 go build 01-hello-world.go
 ```
+
+## Data Types
+- bool
+- string
+- integers
+    - int8
+    - int16
+    - int32
+    - int64
+    - int
+- unsigned integers
+    - uint8
+    - uint16
+    - uint32
+    - uint64
+    - uint
+- floating points
+    - float32
+    - float64
+- complex numbers
+    - complex64 (real[float32] + imaginary[float32])
+    - complex128 (real[float64] + imaginary[float64])
+- type alias
+    - byte
+    - rune (unicode code point)
+
+## Variables in function scope & package scope
+### function scope
+    - Can use :=
+    - Cannot have unused variables
+### package scope
+    - Cannot use :=
+    - Can have unsed variables
+
+## Zero values
+
+| type | zero value |
+| -------|-------- |
+| int, uint, float | 0 |
+| string | "" |
+| bool | false |
+| func | nil |
+| struct | struct instance |
+| pointer |nil |
+| interface | nil | 
