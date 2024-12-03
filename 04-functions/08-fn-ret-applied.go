@@ -26,6 +26,11 @@ func main() {
 
 	logSubtract := getLogOperation(subtract)
 	logSubtract(100, 200)
+
+	logMultiply := getLogOperation(func(x, y int) {
+		fmt.Println("Multiply Result :", x*y)
+	})
+	logMultiply(100, 200)
 }
 
 // ver 1.0

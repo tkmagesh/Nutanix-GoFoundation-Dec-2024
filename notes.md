@@ -130,3 +130,4 @@ GOOS=windows GOARCH=amd64 go build 01-hello-world.go
     - Assign functions as values to variables
     - Pass a function as an argument
     - Return a function as a return value
+- Deferred functions
