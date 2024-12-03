@@ -47,3 +47,15 @@
     - Standard Library API support
         - "sync" package
         - "sync/atomic" package
+## To create a build
+```shell
+go build <file_name.go>
+# ex:
+go build 01-hello-world.go
+```
+## To compile and execute
+```shell
+go run <file_name.go>
+# ex:
+go run 01-hello-world.go
+```
