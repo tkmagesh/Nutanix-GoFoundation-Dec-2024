@@ -59,3 +59,20 @@ go run <file_name.go>
 # ex:
 go run 01-hello-world.go
 ```
+## Cross Compilation
+### List the Go tooling system environment variables
+```shell
+go env
+```
+### Env variables for cross compilation
+```shell
+go env GOOS GOARCH
+```
+### List of supported platforms
+```shell
+go tool dist list
+```
+### How to cross compile
+```shell
+GOOS=windows GOARCH=amd64 go build 01-hello-world.go
+```
