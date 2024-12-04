@@ -140,3 +140,12 @@ GOOS=windows GOARCH=amd64 go build 01-hello-world.go
 - A slice is effectively a pointer to an underlying array
 ### Map
 - Varying sized typed collection of key/value pairs
+
+## Error Handling
+- errors are values returned from a function
+- errors are values that implement "error" interface
+    - error values should have "Error()" method implemented
+- Creating an error
+    - errors.New()
+    - fmt.Errorf()
+    - Custom type implementing "error" interface
