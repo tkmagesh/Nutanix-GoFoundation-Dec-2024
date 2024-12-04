@@ -8,6 +8,14 @@ type Product struct {
 	Cost float64
 }
 
+func NewProduct(id int, name string, cost float64) *Product {
+	return &Product{
+		Id:   id,
+		Name: name,
+		Cost: cost,
+	}
+}
+
 func main() {
 	/*
 		var pen Product
