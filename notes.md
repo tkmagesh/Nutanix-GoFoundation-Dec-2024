@@ -183,6 +183,28 @@ go build .
 # OR
 go build -o <binary_name> .
 ```
+### Using 3rd party modules/packages
+#### To include a module
+```shell
+go get <module_name>
+# ex:
+go get github.com/fatih/color
+```
+#### To update the mod file references
+```shell
+go mod tidy
+```
+#### To download the dependencies documented in the go.mod file
+```shell
+go mod download
+```
+#### To localize the dependencies in a "vendor" folder
+```shell
+go mod vendor
+```
+#### Module command reference
+- https://go.dev/ref/mod
+
 
 ### Package
 - internal organization of a module

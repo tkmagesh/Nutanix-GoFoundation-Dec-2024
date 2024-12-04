@@ -4,12 +4,15 @@ import (
 	"fmt"
 
 	// "github.com/tkmagesh/nutanix-gofoundation-dec-2024/09-modularity-app/calculator"
+	"github.com/fatih/color"
 	calc "github.com/tkmagesh/nutanix-gofoundation-dec-2024/09-modularity-app/calculator"
 	"github.com/tkmagesh/nutanix-gofoundation-dec-2024/09-modularity-app/calculator/utils"
 )
 
 func main() {
 	fmt.Println("Modularity app executed")
+	color.Yellow("Modularity app executed")
+
 	greet("Magesh") // app.go file
 	/*
 		fmt.Println(calculator.Add(100, 200))
