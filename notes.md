@@ -137,4 +137,6 @@ GOOS=windows GOARCH=amd64 go build 01-hello-world.go
 - Fixed sized typed collection
 ### Slice
 - Varying sized typed collection
+- A slice is effectively a pointer to an underlying array
 ### Map
+- Varying sized typed collection of key/value pairs
