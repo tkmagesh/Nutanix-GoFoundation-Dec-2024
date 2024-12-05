@@ -2,7 +2,10 @@ package main
 
 // HINT: use strconv.Atoi() to convert strings to ints
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
 	fmt.Println(sum(10))                //=> 10
@@ -12,10 +15,17 @@ func main() {
 	fmt.Println(sum())                  //=> 0
 }
 
-func sum(nos ...int) int {
+func sum(list ...any) int {
 	var result int
-	for i := 0; i < len(nos); i++ {
-		result += nos[i]
+	for _, x := range list {
+		switch val := x.(type) {
+		case int:
+			result += val
+		case string:
+			if no, err := strconv.Atoi(val); err == nil {
+				result += no
+			}
+		}
 	}
 	return result
 }
