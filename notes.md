@@ -211,3 +211,8 @@ go mod vendor
 - typically, a folder with go files
 - all the code in all the files of the package are considered to belong to the package
 - public entity names MUST start with uppercase
+
+## Concurrency
+### sync.WaitGroup
+- Semaphore based counter
+- Has the ability to block the execution of a function until the counter becomes 0
