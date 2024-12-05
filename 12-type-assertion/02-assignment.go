@@ -1,5 +1,7 @@
 package main
 
+// HINT: use strconv.Atoi() to convert strings to ints
+
 import "fmt"
 
 func main() {
