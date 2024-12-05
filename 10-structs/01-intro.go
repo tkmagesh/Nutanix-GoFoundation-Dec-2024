@@ -24,7 +24,7 @@ func main() {
 		pen.Cost = 20
 	*/
 
-	// var pen Product = Product{100, "Fountain Pen", 20} // advisable
+	// var pen Product = Product{100, "Fountain Pen", 20} // NOT advisable
 	/*
 		var pen Product = Product{
 			Id:   100,
